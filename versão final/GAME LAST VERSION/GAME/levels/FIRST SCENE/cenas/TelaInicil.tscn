@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://bv140uo8ujp2j"]
+
+[ext_resource type="Script" path="res://levels/FIRST SCENE/cenas/TelaIniciaal.cs" id="1_8wrfx"]
+[ext_resource type="Texture2D" uid="uid://ducaush0d47wj" path="res://levels/FIRST SCENE/imagens/fundo tela icianç.png" id="2_smd17"]
+[ext_resource type="FontFile" uid="uid://d15hbgb1cxqm1" path="res://levels/FIRST SCENE/fontes/upheavtt.ttf" id="3_qf8lu"]
+[ext_resource type="AudioStream" uid="uid://bw4qpejmt6v6v" path="res://levels/musicas/soundtrack.wav" id="4_4cc2s"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8wrfx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="TextureRect"]
+position = Vector2(582.75, 322.5)
+scale = Vector2(0.547664, 0.576408)
+texture = ExtResource("2_smd17")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_qf8lu")
+theme_override_font_sizes/font_size = 80
+text = "CORRIDA CONTRA
+     O TEMPO"
+vertical_alignment = 1
+
+[node name="configurações" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="jogar" type="Label" parent="CenterContainer/VBoxContainer/configurações"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_qf8lu")
+theme_override_font_sizes/font_size = 40
+text = "
+
+JOGAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/configurações/jogar"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 256.0
+offset_top = 79.0
+offset_right = 387.0
+offset_bottom = 121.0
+
+[node name="Créditos" type="Label" parent="CenterContainer/VBoxContainer/configurações"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_qf8lu")
+theme_override_font_sizes/font_size = 50
+text = "CRÉDITOS"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer/configurações/Créditos"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 192.0
+offset_top = 2.0
+offset_right = 447.0
+offset_bottom = 44.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_4cc2s")
+autoplay = true
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/configurações/jogar/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/configurações/Créditos/Button2" to="." method="_on_button_2_pressed"]
