@@ -1,0 +1,131 @@
+[gd_scene load_steps=12 format=3 uid="uid://dbcqi6crj5qyx"]
+
+[ext_resource type="Texture2D" uid="uid://by3r2pqqbnucd" path="res://levels/game over/Fundo real.png" id="1_p6frs"]
+[ext_resource type="Script" path="res://levels/game over/gameover.cs" id="1_v43lh"]
+[ext_resource type="Texture2D" uid="uid://cssmpcv0u3o7d" path="res://levels/game over/aaaa.png" id="2_phpek"]
+[ext_resource type="Texture2D" uid="uid://cw5dykj6jytk1" path="res://levels/game over/Voltar.png" id="3_2eggn"]
+[ext_resource type="AudioStream" uid="uid://bi72o4nx8ur5i" path="res://levels/musicas/the-oldest-mage-yt-5s.com-_1_.wav" id="5_x2g6m"]
+
+[sub_resource type="Animation" id="Animation_kstxw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_7j65e"]
+resource_name = "reveal"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t1sts"]
+_data = {
+"RESET": SubResource("Animation_kstxw"),
+"reveal": SubResource("Animation_7j65e")
+}
+
+[sub_resource type="Animation" id="Animation_7ox5e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("voltar:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_c5580"]
+resource_name = "reveal"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("voltar:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.2, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ryjtm"]
+_data = {
+"RESET": SubResource("Animation_7ox5e"),
+"reveal": SubResource("Animation_c5580")
+}
+
+[node name="gameover" type="Node2D"]
+position = Vector2(3, -10)
+script = ExtResource("1_v43lh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -7.0
+offset_top = 2.0
+offset_right = 1144.0
+offset_bottom = 651.0
+
+[node name="fundo" type="Sprite2D" parent="TextureRect"]
+position = Vector2(564, 323)
+texture = ExtResource("1_p6frs")
+
+[node name="img" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(389, 184)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_phpek")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="img"]
+autoplay = "reveal"
+libraries = {
+"": SubResource("AnimationLibrary_t1sts")
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 295.0
+offset_top = 361.0
+offset_right = 489.0
+offset_bottom = 419.0
+metadata/_edit_group_ = true
+
+[node name="voltar" type="Sprite2D" parent="TextureButton"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(94, 25)
+texture = ExtResource("3_2eggn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureButton"]
+autoplay = "reveal"
+libraries = {
+"": SubResource("AnimationLibrary_ryjtm")
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_x2g6m")
+autoplay = true
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

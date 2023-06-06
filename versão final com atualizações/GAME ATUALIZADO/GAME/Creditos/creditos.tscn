@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=3 uid="uid://dyceefr5m02uf"]
+
+[ext_resource type="Script" path="res://scripts/creditos.cs" id="1_0m26f"]
+[ext_resource type="Texture2D" uid="uid://cuchdexqnt4kj" path="res://Creditos/PNG/Cartoon_Forest_BG_03/Layers/Sky.png" id="1_8ri0r"]
+[ext_resource type="Texture2D" uid="uid://4hhfxsh43e31" path="res://Creditos/PNG/Cartoon_Forest_BG_03/Layers/Ground.png" id="2_hambe"]
+[ext_resource type="Texture2D" uid="uid://ewwp2fduogpo" path="res://Creditos/voltar inicio.png" id="3_gv5vm"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0m26f")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(483.875, 209.813)
+scale = Vector2(0.508463, 0.394792)
+texture = ExtResource("1_8ri0r")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(482, 173.5)
+scale = Vector2(0.514583, 0.478704)
+texture = ExtResource("2_hambe")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 150.0
+offset_top = 60.0
+offset_right = 980.0
+offset_bottom = 569.0
+color = Color(0.00392157, 0.00392157, 0.00392157, 0.2)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Nome" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 43.0
+offset_top = 67.0
+offset_right = 302.0
+offset_bottom = 215.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 18
+text = "                  INTEGRANTES:
+
+Gabriel Coutinho - RA: 23024959
+Guilherme Santos - RA: 23024851
+Vinicius Willian - RA: 23024976
+Yago Kawauchi - RA: 23024964"
+
+[node name="links" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 7.0
+offset_top = 225.0
+offset_right = 687.0
+offset_bottom = 364.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "                      REFERÊNCIAS:
+
+SEASONAL TILESETS - Disponivel em: https://grafxkid.itch.io/seasonal-tilesets
+
+FREE 3 CHARACTER SPRITE SHEETS PIXEL ART - Disponivel em: https://craftpix.net/freebies/free-3-character-sprite-sheets-pixel-art/?num=1&count=500&sq=main%20character&pos=4
+
+FREE FOREST BOSSES PIXEL ART SPRITE SHEET PACK - Disponivel em: https://craftpix.net/freebies/free-forest-bosses-pixel-art-sprite-sheet-pack/
+
+FREE INDUSTRIAL ZONE TILESET PIXEL ART - Disponivel em:
+https://craftpix.net/freebies/free-industrial-zone-tileset-pixel-art/?num=1&count=27&sq=industry&pos=5
+
+FREE CARTOON FOREST GAME BACKGROUNDS - Disponivel em: https://craftpix.net/freebies/free-cartoon-forest-game-backgrounds/?num=1&count=69&sq=woods&pos=3
+
+ARCADE MEMORY SONG - Disponivel em: https://artlist.io/song/103836/arcade-memory?search=arcade"
+
+[node name="VoltarInicio" type="TextureButton" parent="."]
+offset_left = -2.0
+offset_top = -4.0
+offset_right = 103.0
+offset_bottom = 62.0
+
+[node name="Sprite2D" type="Sprite2D" parent="VoltarInicio"]
+position = Vector2(53, 32.5)
+scale = Vector2(0.443515, 0.557522)
+texture = ExtResource("3_gv5vm")
+
+[connection signal="pressed" from="VoltarInicio" to="." method="_on_voltar_inicio_pressed"]

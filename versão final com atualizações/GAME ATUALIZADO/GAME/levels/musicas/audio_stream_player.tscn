@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://fayvmtup12nw"]
+
+[ext_resource type="AudioStream" uid="uid://bw4qpejmt6v6v" path="res://levels/musicas/soundtrack.wav" id="1_2on33"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_2on33")
+autoplay = true

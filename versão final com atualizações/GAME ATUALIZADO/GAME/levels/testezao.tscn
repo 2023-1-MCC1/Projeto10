@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://0a365lfk18cu"]
+
+[ext_resource type="PackedScene" uid="uid://bsjbbceyrxb3y" path="res://levels/Characters/normal_enemie.tscn" id="1_082sd"]
+[ext_resource type="PackedScene" uid="uid://cfgn1e0jqf5ex" path="res://levels/Characters/boss.tscn" id="2_t83jy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jppoy"]
+size = Vector2(1083, 219)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(597, 546)
+shape = SubResource("RectangleShape2D_jppoy")
+
+[node name="Normal_Enemie" parent="." instance=ExtResource("1_082sd")]
+position = Vector2(219, 290)
+
+[node name="Boss" parent="." instance=ExtResource("2_t83jy")]
+position = Vector2(518, 372)

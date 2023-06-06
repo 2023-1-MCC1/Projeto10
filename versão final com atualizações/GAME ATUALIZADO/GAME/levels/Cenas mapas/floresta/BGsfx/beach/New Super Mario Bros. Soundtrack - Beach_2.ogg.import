@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dlv11pesj16ys"
+path="res://.godot/imported/New Super Mario Bros. Soundtrack - Beach_2.ogg-ea0ca4df587047b7b9522bc0b0913203.oggvorbisstr"
+
+[deps]
+
+source_file="res://BGsfx/beach/New Super Mario Bros. Soundtrack - Beach_2.ogg"
+dest_files=["res://.godot/imported/New Super Mario Bros. Soundtrack - Beach_2.ogg-ea0ca4df587047b7b9522bc0b0913203.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

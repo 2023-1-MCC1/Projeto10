@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bvrcc2yy3t72b"
+path="res://.godot/imported/the-search-yt-5s.com (2).wav-882cc8a21767da229f265bafc8e3fbee.sample"
+
+[deps]
+
+source_file="res://levels/musicas/the-search-yt-5s.com (2).wav"
+dest_files=["res://.godot/imported/the-search-yt-5s.com (2).wav-882cc8a21767da229f265bafc8e3fbee.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

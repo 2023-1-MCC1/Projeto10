@@ -1,0 +1,139 @@
+[gd_scene load_steps=8 format=3 uid="uid://dprimhnkefu5b"]
+
+[ext_resource type="Script" path="res://levels/FIRST SCENE/scripts/objetivos_e_controles.cs" id="1_f7yxs"]
+[ext_resource type="Texture2D" uid="uid://ducaush0d47wj" path="res://levels/FIRST SCENE/imagens/fundo tela icianç.png" id="1_t2exx"]
+[ext_resource type="FontFile" uid="uid://d15hbgb1cxqm1" path="res://levels/FIRST SCENE/fontes/upheavtt.ttf" id="2_p6yk0"]
+[ext_resource type="Texture2D" uid="uid://b58blpb17uji7" path="res://levels/FIRST SCENE/imagens/direita.png" id="3_g5jal"]
+[ext_resource type="Texture2D" uid="uid://td0omrqjwh6p" path="res://levels/FIRST SCENE/imagens/esquerda.png" id="4_c8he6"]
+[ext_resource type="Texture2D" uid="uid://b8o1suxwhfh41" path="res://levels/FIRST SCENE/imagens/ffff.png" id="5_vgao3"]
+[ext_resource type="Texture2D" uid="uid://ol6v6ycr1q75" path="res://levels/FIRST SCENE/imagens/SPACEBAR.png" id="6_kfecw"]
+
+[node name="Objetivos e controles" type="Node2D"]
+position = Vector2(-3, -7)
+script = ExtResource("1_f7yxs")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1141.0
+offset_bottom = 657.0
+
+[node name="Sprite2D" type="Sprite2D" parent="TextureRect"]
+position = Vector2(399, 218)
+scale = Vector2(0.389807, 0.394996)
+texture = ExtResource("1_t2exx")
+
+[node name="Sprite2D2" type="Sprite2D" parent="TextureRect"]
+position = Vector2(399, 218)
+scale = Vector2(0.389807, 0.394996)
+texture = ExtResource("1_t2exx")
+
+[node name="Objetivo e controles" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 824.0
+offset_bottom = 121.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 46
+text = "OBJETIVO DO JOGO E CONTROLES "
+
+[node name="Objetivo" type="Label" parent="."]
+offset_left = 275.0
+offset_top = 76.0
+offset_right = 1029.0
+offset_bottom = 166.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 40
+text = "objetivos"
+
+[node name="explicação" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 142.0
+offset_right = 798.0
+offset_bottom = 258.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 24
+text = "   o jogador deve eliminar os inimigos contaminados 
+ COM RADIAÇÃO  NO ESPAÇO DE TEMPO MAIS CURTO POSSÍVEL
+  E TAMBÉM ACHAR A SAÍDA SECRETA PARA A PRÓXIMA FASE 
+       (A SAÍDA COSTUMA FICAR NOS CANTOS SUPERIORES...)"
+
+[node name="Controles" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 273.0
+offset_right = 163.0
+offset_bottom = 304.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 30
+text = "CONTROLES:"
+
+[node name="DIREITA" type="Sprite2D" parent="."]
+position = Vector2(197, 286)
+scale = Vector2(0.335, 0.372093)
+texture = ExtResource("3_g5jal")
+
+[node name="ESQUERDA" type="Sprite2D" parent="."]
+position = Vector2(196, 323)
+scale = Vector2(0.35101, 0.348837)
+texture = ExtResource("4_c8he6")
+
+[node name="BOTAO F" type="Sprite2D" parent="."]
+position = Vector2(195, 360)
+scale = Vector2(0.404069, 0.472656)
+texture = ExtResource("5_vgao3")
+
+[node name="SPACEBAR" type="Sprite2D" parent="."]
+position = Vector2(142, 399)
+scale = Vector2(0.411765, 0.453488)
+texture = ExtResource("6_kfecw")
+
+[node name="DIREITA2" type="Label" parent="."]
+offset_left = 222.0
+offset_top = 276.0
+offset_right = 464.0
+offset_bottom = 302.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 22
+text = "- ANDAR PARA DIREITA"
+
+[node name="Labeesquerda" type="Label" parent="."]
+offset_left = 221.0
+offset_top = 312.0
+offset_right = 536.0
+offset_bottom = 341.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 22
+text = "- ANDAR PARA ESQUERDA"
+
+[node name="F" type="Label" parent="."]
+offset_left = 221.0
+offset_top = 348.0
+offset_right = 319.0
+offset_bottom = 372.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 22
+text = "- atacar"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 222.0
+offset_top = 389.0
+offset_right = 316.0
+offset_bottom = 413.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 22
+text = "- PULAR "
+
+[node name="voltar" type="Label" parent="."]
+offset_left = 524.0
+offset_top = 391.0
+offset_right = 671.0
+offset_bottom = 415.0
+theme_override_fonts/font = ExtResource("2_p6yk0")
+theme_override_font_sizes/font_size = 22
+text = "VOLTAR MENU "
+
+[node name="Button" type="Button" parent="voltar"]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 138.0
+offset_bottom = 19.0
+
+[connection signal="pressed" from="voltar/Button" to="." method="_on_button_pressed"]

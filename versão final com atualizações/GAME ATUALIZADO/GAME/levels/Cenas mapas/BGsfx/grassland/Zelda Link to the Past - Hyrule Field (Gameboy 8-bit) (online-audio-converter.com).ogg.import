@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bcs1shstdenmq"
+path="res://.godot/imported/Zelda Link to the Past - Hyrule Field (Gameboy 8-bit) (online-audio-converter.com).ogg-9613994b6dee79c33ca8144978e7e31d.oggvorbisstr"
+
+[deps]
+
+source_file="res://BGsfx/grassland/Zelda Link to the Past - Hyrule Field (Gameboy 8-bit) (online-audio-converter.com).ogg"
+dest_files=["res://.godot/imported/Zelda Link to the Past - Hyrule Field (Gameboy 8-bit) (online-audio-converter.com).ogg-9613994b6dee79c33ca8144978e7e31d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

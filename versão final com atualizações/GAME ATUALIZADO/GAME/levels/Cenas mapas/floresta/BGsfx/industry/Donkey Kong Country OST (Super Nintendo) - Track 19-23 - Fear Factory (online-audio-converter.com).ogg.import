@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dglty28autc5x"
+path="res://.godot/imported/Donkey Kong Country OST (Super Nintendo) - Track 19-23 - Fear Factory (online-audio-converter.com).ogg-762694cc5c12f3aaad03ab420bb61374.oggvorbisstr"
+
+[deps]
+
+source_file="res://BGsfx/industry/Donkey Kong Country OST (Super Nintendo) - Track 19-23 - Fear Factory (online-audio-converter.com).ogg"
+dest_files=["res://.godot/imported/Donkey Kong Country OST (Super Nintendo) - Track 19-23 - Fear Factory (online-audio-converter.com).ogg-762694cc5c12f3aaad03ab420bb61374.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
