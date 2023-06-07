@@ -94,7 +94,7 @@ Coloque código do prompt de comnando se for necessário
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 01/06/2023 Versão 1.0 - Versão atualizada com informação dos controles e alterações de polimento do jogo.
+* 01/06/2023 Versão 1.1 - Versão atualizada com informação dos controles e alterações de polimento do jogo.
 * 03/06/2023 Versão 1.0 - Versão sem informação dos controles.
 
 
