@@ -109,6 +109,10 @@ Aqui estão as referências usadas no projeto.
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
 4. <https://freesound.org/>
+5. Seasonal tilets: https://grafxkid.itch.io/seasonal-tilesets
+6. MainCharacter: https://craftpix.net/freebies/free-3-character-sprite-sheets-pixel-art/?num=5&count=311&sq=enemies&pos=11
+7. Boss: https://craftpix.net/freebies/free-3-cyberpunk-characters-pixel-art/?num=1&count=1376&sq=townspeople&pos=4
+8. NormalEnemy:https://craftpix.net/freebies/free-forest-bosses-pixel-art-sprite-sheet-pack/?num=2&count=302&sq=enemies%20%20water&pos=5
  Musicas por: z3r0 e Pix. Licença CC 0.
 
 
