@@ -23,19 +23,11 @@ O jogo "Corrida contra o tempo", é um projeto idealizado pelo atual grupo, real
 
 ## 🛠 Estrutura de pastas
 
-|versão 1
-| -> versão final com atualizações
-  | -> GAME ATUALIZADO
-    | -> GAME
-      | -> .godot
-      | -> animation
-      | -> assets
-      | -> Creditos
-      | -> levels
-      | -> mensagemfinal
-      | -> scripts
-| -> .gitignore
-| -> README
+-Raiz<br>
+|<br>
+|-->src<br>
+  &emsp;|-->Arquivos do jogo<br>
+|readme.md<br>
 
 A pasta raiz contem dois arquivos que devem ser alterados:
 
@@ -74,7 +66,7 @@ Coloque código do prompt de comnando se for necessário
 <b>HTML:</b>
 
 Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Encontre o arquivo do jogo denominado como "versão final" execute-o e rode o jogo.
 
 ## 💻 Configuração para Desenvolvimento
 
@@ -83,12 +75,6 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
 -<a href="https://godotengine.org/download">GODOT</a>, intale a versão 4.0.2 PARA O CORRETO FUNCIONAMENTO.
-
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
 
 ## 🗃 Histórico de lançamentos
 
@@ -99,6 +85,7 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 
 ## 📋 Licença/License
+Corrida contra o tempo by Gabriel Coutinho Cezar, Yago Feitosa Kawauchi, is license under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
 
 ## 🎓 Referências
