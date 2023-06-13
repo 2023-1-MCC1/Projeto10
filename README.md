@@ -8,7 +8,7 @@
 
 ## Nome do Grupo : Grupo Corrida contra o tempo 
 
-## Integrantes: Gabriel Coutinho Cezar, Yago Feitosa Kawauchi, Vincius William, Guilherme
+## Integrantes: Gabriel Coutinho Cezar, Yago Feitosa Kawauchi, Vinicius William, Guilherme
 
 ## Professores Orientadores: Eduardo Savino, Renata Muniz Do Nascimento, Victor Bruno Alexander Rosetti de Quiroz, Fabiano Alves Onça, Jefferson de Oliveira Silva
 
