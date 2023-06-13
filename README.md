@@ -47,6 +47,7 @@ Há também 4 pastas que seguem da seguinte forma:
 
 <b>Windows:</b>
 Caso queira jogar acesse o link, baixe o arquivo "Game.rar", extraia-o e execute.
+Link do jogo: https://drive.google.com/file/d/1pEQlVRF7zzPoHDUBNPFK6zvem_sHQXnu/view?usp=sharing
 
 
 ## 💻 Configuração para Desenvolvimento
